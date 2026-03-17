@@ -19,6 +19,45 @@
   .cta-secondary { background: transparent; border: 2px solid #333; color: #fff; margin-left: 12px; }
   .cta-secondary:hover { border-color: #4fc3f7; }
   
+  /* DEMO SECTION */
+  .demo { max-width: 900px; margin: 20px auto 60px; padding: 0 20px; }
+  .demo h2 { text-align: center; color: #fff; font-size: 1.8em; margin-bottom: 8px; }
+  .demo .sub { text-align: center; color: #888; margin-bottom: 24px; }
+  .demo-terminal { background: #111; border: 1px solid #333; border-radius: 12px; overflow: hidden; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.85em; }
+  .demo-titlebar { background: #1a1a1a; padding: 10px 16px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #222; }
+  .demo-dot { width: 12px; height: 12px; border-radius: 50%; }
+  .demo-dot.red { background: #ff5f56; }
+  .demo-dot.yellow { background: #ffbd2e; }
+  .demo-dot.green { background: #27c93f; }
+  .demo-titlebar span { color: #888; font-size: 0.8em; margin-left: 8px; }
+  .demo-body { padding: 20px; min-height: 320px; line-height: 1.7; }
+  .demo-line { opacity: 0; transform: translateY(4px); transition: all 0.3s ease; }
+  .demo-line.visible { opacity: 1; transform: translateY(0); }
+  .demo-prompt { color: #4fc3f7; }
+  .demo-url { color: #81d4fa; }
+  .demo-status { color: #888; }
+  .demo-success { color: #4caf50; }
+  .demo-warn { color: #ff9800; }
+  .demo-error { color: #f44336; }
+  .demo-bold { color: #fff; font-weight: 700; }
+  .demo-score { font-size: 1.1em; font-weight: 700; padding: 2px 8px; border-radius: 4px; }
+  .demo-score.low { background: #1b3a1b; color: #4caf50; }
+  .demo-score.mid { background: #3a2e1b; color: #ff9800; }
+  .demo-score.high { background: #3a1b1b; color: #f44336; }
+  .cursor { display: inline-block; width: 8px; height: 16px; background: #4fc3f7; animation: blink 1s infinite; vertical-align: middle; margin-left: 2px; }
+  @keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+  
+  .demo-btn { display: block; margin: 20px auto 0; background: #4fc3f7; color: #000; border: none; padding: 12px 28px; border-radius: 8px; font-weight: 700; font-size: 1em; cursor: pointer; transition: all 0.2s; }
+  .demo-btn:hover { background: #81d4fa; transform: translateY(-2px); }
+  .demo-btn:disabled { background: #333; color: #666; transform: none; cursor: default; }
+
+  /* RESULTS TABLE */
+  .demo-results { margin-top: 16px; opacity: 0; transition: opacity 0.5s; }
+  .demo-results.visible { opacity: 1; }
+  .demo-results table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+  .demo-results th { color: #4fc3f7; padding: 8px; text-align: left; border-bottom: 1px solid #333; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.5px; }
+  .demo-results td { padding: 8px; border-bottom: 1px solid #1a1a1a; color: #ccc; }
+
   .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; padding: 40px 20px; }
   .feature { background: #1a1a1a; border-radius: 12px; padding: 28px; border: 1px solid #222; }
   .feature .icon { font-size: 2em; margin-bottom: 12px; }
@@ -32,9 +71,6 @@
   th { background: #222; color: #4fc3f7; padding: 14px 16px; text-align: left; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px; }
   td { padding: 12px 16px; border-bottom: 1px solid #222; color: #ccc; font-size: 0.95em; }
   tr:last-child td { border: none; }
-  .score-low { color: #4caf50; font-weight: 700; }
-  .score-mid { color: #ff9800; font-weight: 700; }
-  .score-high { color: #f44336; font-weight: 700; }
   
   .how { max-width: 700px; margin: 60px auto; padding: 0 20px; text-align: center; }
   .how h2 { color: #fff; font-size: 1.8em; margin-bottom: 30px; }
@@ -61,9 +97,28 @@
   <p class="tagline">Autonomous UX Benchmarking Agent.<br>Test any website's contact experience.</p>
   <p class="usp">"They need access. You just need a URL."</p>
   <a href="https://github.com/sameer-goel/BetterUX" class="cta">View on GitHub</a>
-  <a href="#how" class="cta cta-secondary">How It Works</a>
+  <a href="#demo" class="cta cta-secondary">See Demo</a>
 </div>
 
+<!-- LIVE DEMO -->
+<div class="demo" id="demo">
+  <h2>🔭 Watch It Work</h2>
+  <p class="sub">Real benchmark data from actual websites</p>
+  <div class="demo-terminal">
+    <div class="demo-titlebar">
+      <div class="demo-dot red"></div>
+      <div class="demo-dot yellow"></div>
+      <div class="demo-dot green"></div>
+      <span>betterux — benchmark</span>
+    </div>
+    <div class="demo-body" id="demoBody">
+      <div class="demo-line visible"><span class="demo-prompt">$</span> node benchmark.js sites.json<span class="cursor" id="startCursor"></span></div>
+    </div>
+  </div>
+  <button class="demo-btn" id="demoBtn" onclick="runDemo()">▶ Run Benchmark Demo</button>
+</div>
+
+<!-- FEATURES -->
 <div class="features">
   <div class="feature">
     <div class="icon">🔍</div>
@@ -97,6 +152,7 @@
   </div>
 </div>
 
+<!-- FULL RESULTS -->
 <div class="comparison">
   <h2>Real Benchmark Results</h2>
   <p class="sub">Consulting firms — tested March 2026</p>
@@ -107,7 +163,7 @@
     <tr><td>Cookie Banner</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
     <tr><td>Above Fold</td><td style="color:#f44336">No</td><td style="color:#4caf50">Yes</td><td style="color:#4caf50">Yes</td></tr>
     <tr><td>Est. Human Time</td><td>72s</td><td>35s</td><td>70s</td></tr>
-    <tr><td><strong>Friction Score</strong></td><td class="score-mid"><strong>5.5/10</strong></td><td class="score-low"><strong>4.0/10</strong></td><td class="score-mid"><strong>5.0/10</strong></td></tr>
+    <tr><td><strong>Friction Score</strong></td><td style="color:#ff9800;font-weight:700"><strong>5.5/10</strong></td><td style="color:#4caf50;font-weight:700"><strong>4.0/10</strong></td><td style="color:#ff9800;font-weight:700"><strong>5.0/10</strong></td></tr>
   </table>
 </div>
 
@@ -142,6 +198,97 @@
 <div class="footer">
   <p>Built by <a href="https://nl.linkedin.com/in/sameer-goel">Sameer Goel</a> with Scout 🔭 | <a href="https://github.com/sameer-goel/BetterUX">GitHub</a></p>
 </div>
+
+<script>
+const DEMO_DATA = [
+  { site: 'accenture.com', fields: '6 req / 2 opt', captcha: 'reCAPTCHA', time: '72s', score: 5.5, scoreClass: 'mid' },
+  { site: 'zendesk.com', fields: '0 req / 5 opt', captcha: 'None', time: '35s', score: 4.0, scoreClass: 'low' },
+  { site: 'deloitte.com', fields: '9 req / 5 opt', captcha: 'None', time: '70s', score: 5.0, scoreClass: 'mid' }
+];
+
+const DEMO_LINES = [
+  { delay: 600, text: '' },
+  { delay: 400, text: '<span class="demo-status">Loading 3 sites...</span>' },
+  { delay: 800, text: '' },
+  { delay: 300, text: '🔍 <span class="demo-bold">Benchmarking accenture.com...</span>' },
+  { delay: 500, text: '  <span class="demo-status">→ Navigating to homepage...</span>' },
+  { delay: 700, text: '  <span class="demo-status">→ Found contact page via nav link "Contact Us"</span>' },
+  { delay: 600, text: '  <span class="demo-status">→ Analyzing form: 8 fields detected (6 required)</span>' },
+  { delay: 400, text: '  <span class="demo-error">→ CAPTCHA detected: reCAPTCHA</span>' },
+  { delay: 300, text: '  <span class="demo-status">→ Cookie banner: dismissed</span>' },
+  { delay: 400, text: '  <span class="demo-status">→ Filling fields: First name, Last name, Email, Phone...</span>' },
+  { delay: 500, text: '  <span class="demo-success">✅ accenture.com: friction <span class="demo-score mid">5.5/10</span> | 72s est. human time</span>' },
+  { delay: 800, text: '' },
+  { delay: 300, text: '🔍 <span class="demo-bold">Benchmarking zendesk.com...</span>' },
+  { delay: 500, text: '  <span class="demo-status">→ Navigating to homepage...</span>' },
+  { delay: 600, text: '  <span class="demo-status">→ Found contact page via nav link "Contact Us"</span>' },
+  { delay: 500, text: '  <span class="demo-status">→ Analyzing form: 5 fields detected (0 required)</span>' },
+  { delay: 300, text: '  <span class="demo-success">→ No CAPTCHA detected ✓</span>' },
+  { delay: 400, text: '  <span class="demo-status">→ Filling fields: First name, Last name, Email, Message...</span>' },
+  { delay: 500, text: '  <span class="demo-success">✅ zendesk.com: friction <span class="demo-score low">4.0/10</span> | 35s est. human time</span>' },
+  { delay: 800, text: '' },
+  { delay: 300, text: '🔍 <span class="demo-bold">Benchmarking deloitte.com...</span>' },
+  { delay: 500, text: '  <span class="demo-status">→ Navigating to homepage...</span>' },
+  { delay: 600, text: '  <span class="demo-status">→ Found contact page via nav link "Contact Us"</span>' },
+  { delay: 500, text: '  <span class="demo-status">→ Analyzing form: 14 fields detected (9 required)</span>' },
+  { delay: 300, text: '  <span class="demo-success">→ No CAPTCHA detected ✓</span>' },
+  { delay: 400, text: '  <span class="demo-status">→ Filling fields: Topic, First Name, Last Name, Email, Job Title...</span>' },
+  { delay: 500, text: '  <span class="demo-success">✅ deloitte.com: friction <span class="demo-score mid">5.0/10</span> | 70s est. human time</span>' },
+  { delay: 800, text: '' },
+  { delay: 300, text: '<span class="demo-bold">━━━ COMPARISON SCORECARD ━━━</span>' },
+  { delay: 200, type: 'table' }
+];
+
+let demoRunning = false;
+
+async function runDemo() {
+  if (demoRunning) return;
+  demoRunning = true;
+  const btn = document.getElementById('demoBtn');
+  btn.disabled = true;
+  btn.textContent = '⏳ Running...';
+  
+  const body = document.getElementById('demoBody');
+  const cursor = document.getElementById('startCursor');
+  if (cursor) cursor.remove();
+  
+  for (const line of DEMO_LINES) {
+    await sleep(line.delay);
+    if (line.type === 'table') {
+      const div = document.createElement('div');
+      div.className = 'demo-results';
+      div.innerHTML = `<table>
+        <tr><th>Site</th><th>Fields</th><th>CAPTCHA</th><th>Human Time</th><th>Friction</th></tr>
+        ${DEMO_DATA.map(d => `<tr>
+          <td style="color:#fff">${d.site}</td>
+          <td>${d.fields}</td>
+          <td style="color:${d.captcha === 'None' ? '#4caf50' : '#f44336'}">${d.captcha}</td>
+          <td>${d.time}</td>
+          <td><span class="demo-score ${d.scoreClass}">${d.score}/10</span></td>
+        </tr>`).join('')}
+      </table>`;
+      body.appendChild(div);
+      await sleep(100);
+      div.classList.add('visible');
+    } else if (line.text !== '') {
+      const div = document.createElement('div');
+      div.className = 'demo-line';
+      div.innerHTML = line.text;
+      body.appendChild(div);
+      await sleep(50);
+      div.classList.add('visible');
+    }
+    body.scrollTop = body.scrollHeight;
+  }
+  
+  await sleep(500);
+  btn.textContent = '✅ Complete — Run Again?';
+  btn.disabled = false;
+  btn.onclick = () => { body.innerHTML = '<div class="demo-line visible"><span class="demo-prompt">$</span> node benchmark.js sites.json<span class="cursor"></span></div>'; demoRunning = false; runDemo(); };
+}
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+</script>
 
 </body>
 </html>
