@@ -1,0 +1,155 @@
+[
+  {
+    "url": "https://www.hubspot.com",
+    "timestamp": "2026-03-17T09:40:19.410Z",
+    "homepageLoadMs": 1840,
+    "contactUrl": "https://www.hubspot.com/company/contact?hubs_content=www.hubspot.com/&hubs_content-cta=contact-us",
+    "navMethod": "nav link \"Contact Us\"",
+    "navTimeMs": 4681,
+    "totalFields": 1,
+    "requiredFields": 0,
+    "optionalFields": 1,
+    "fieldInventory": [
+      {
+        "label": "Search HubSpot",
+        "type": "search",
+        "required": false
+      }
+    ],
+    "fieldTypes": "search",
+    "complexFields": 0,
+    "captcha": "None",
+    "cookieBanner": true,
+    "aboveFold": true,
+    "scrollNeeded": false,
+    "multiStep": false,
+    "submitButton": "none found",
+    "fillTimeMs": 1411,
+    "totalClicks": 1,
+    "fieldTimings": [
+      {
+        "field": "Search HubSpot",
+        "ms": 6
+      }
+    ],
+    "fillErrors": [],
+    "interruptions": 1,
+    "frictionScore": 1.5,
+    "estHumanTimeSec": 8
+  },
+  {
+    "url": "https://www.salesforce.com",
+    "timestamp": "2026-03-17T09:40:27.854Z",
+    "homepageLoadMs": 70,
+    "contactUrl": null,
+    "navMethod": "NOT FOUND",
+    "navTimeMs": 492,
+    "error": "Contact page not found"
+  },
+  {
+    "url": "https://www.zoho.com",
+    "timestamp": "2026-03-17T09:40:28.397Z",
+    "homepageLoadMs": 615,
+    "contactUrl": "https://www.zoho.com/contactus.html",
+    "navMethod": "nav link \"Contact Us\"",
+    "navTimeMs": 1736,
+    "totalFields": 1,
+    "requiredFields": 1,
+    "optionalFields": 0,
+    "fieldInventory": [
+      {
+        "label": "Search for product overviews, FAQs, and more...",
+        "type": "text",
+        "required": true
+      }
+    ],
+    "fieldTypes": "text",
+    "complexFields": 0,
+    "captcha": "None",
+    "cookieBanner": true,
+    "aboveFold": true,
+    "scrollNeeded": false,
+    "multiStep": false,
+    "submitButton": "",
+    "fillTimeMs": 30015,
+    "totalClicks": 0,
+    "fieldTimings": [
+      {
+        "field": "Search for product overviews, ",
+        "ms": 30009
+      }
+    ],
+    "fillErrors": [
+      "query: locator.fill: Timeout 30000ms exceeded.\nCall log:\n"
+    ],
+    "interruptions": 0,
+    "frictionScore": 0.5,
+    "estHumanTimeSec": 10
+  },
+  {
+    "url": "https://www.pipedrive.com",
+    "timestamp": "2026-03-17T09:41:02.278Z",
+    "homepageLoadMs": 718,
+    "contactUrl": "https://www.pipedrive.com/en/contact-sales",
+    "navMethod": "nav link \"Contact\"",
+    "navTimeMs": 1584,
+    "totalFields": 1,
+    "requiredFields": 0,
+    "optionalFields": 1,
+    "fieldInventory": [
+      {
+        "label": "Search Pipedrive",
+        "type": "search",
+        "required": false
+      }
+    ],
+    "fieldTypes": "search",
+    "complexFields": 0,
+    "captcha": "None",
+    "cookieBanner": true,
+    "aboveFold": true,
+    "scrollNeeded": false,
+    "multiStep": false,
+    "submitButton": "none found",
+    "fillTimeMs": 20,
+    "totalClicks": 0,
+    "fieldTimings": [],
+    "fillErrors": [],
+    "interruptions": 0,
+    "frictionScore": 0.5,
+    "estHumanTimeSec": 8
+  },
+  {
+    "url": "https://www.freshworks.com",
+    "timestamp": "2026-03-17T09:41:06.797Z",
+    "homepageLoadMs": 676,
+    "contactUrl": "https://www.freshworks.com/contact/",
+    "navMethod": "nav link \"Contact Us\"",
+    "navTimeMs": 5758,
+    "totalFields": 1,
+    "requiredFields": 0,
+    "optionalFields": 1,
+    "fieldInventory": [
+      {
+        "label": "AI prompt input",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "fieldTypes": "text",
+    "complexFields": 0,
+    "captcha": "None",
+    "cookieBanner": true,
+    "aboveFold": true,
+    "scrollNeeded": false,
+    "multiStep": false,
+    "submitButton": "none found",
+    "fillTimeMs": 3006,
+    "totalClicks": 0,
+    "fieldTimings": [],
+    "fillErrors": [],
+    "interruptions": 0,
+    "frictionScore": 2.5,
+    "estHumanTimeSec": 10
+  }
+]

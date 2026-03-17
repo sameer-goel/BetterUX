@@ -1,0 +1,348 @@
+[
+  {
+    "url": "https://www.accenture.com",
+    "timestamp": "2026-03-17T09:43:47.393Z",
+    "homepageLoadMs": 714,
+    "contactUrl": "https://www.accenture.com/us-en/about/contact-us",
+    "navMethod": "nav link \"Contact Us\"",
+    "navTimeMs": 1614,
+    "totalFields": 8,
+    "requiredFields": 6,
+    "optionalFields": 2,
+    "fieldInventory": [
+      {
+        "label": "First name*",
+        "type": "name",
+        "required": true
+      },
+      {
+        "label": "Last name*",
+        "type": "name",
+        "required": true
+      },
+      {
+        "label": "Email address*",
+        "type": "email",
+        "required": true
+      },
+      {
+        "label": "Phone Number (Please include country code)",
+        "type": "tel",
+        "required": false
+      },
+      {
+        "label": "Company/Organization*",
+        "type": "name",
+        "required": true
+      },
+      {
+        "label": "Your role/function",
+        "type": "text",
+        "required": false
+      },
+      {
+        "label": "How can we help you?*",
+        "type": "textarea",
+        "required": true
+      },
+      {
+        "label": "I agree to the use or processing of my personal information ",
+        "type": "checkbox",
+        "required": true
+      }
+    ],
+    "fieldTypes": "name, email, tel, text, textarea, checkbox",
+    "complexFields": 0,
+    "captcha": "reCAPTCHA",
+    "cookieBanner": true,
+    "aboveFold": false,
+    "scrollNeeded": true,
+    "multiStep": false,
+    "submitButton": "Submit",
+    "fillTimeMs": 1836,
+    "totalClicks": 9,
+    "fieldTimings": [
+      {
+        "field": "First name*",
+        "ms": 435
+      },
+      {
+        "field": "Last name*",
+        "ms": 310
+      },
+      {
+        "field": "Email address*",
+        "ms": 135
+      },
+      {
+        "field": "Phone Number (Please include c",
+        "ms": 64
+      },
+      {
+        "field": "Company/Organization*",
+        "ms": 56
+      },
+      {
+        "field": "Your role/function",
+        "ms": 78
+      },
+      {
+        "field": "How can we help you?*",
+        "ms": 39
+      },
+      {
+        "field": "I agree to the use or processi",
+        "ms": 91
+      }
+    ],
+    "fillErrors": [],
+    "interruptions": 1,
+    "frictionScore": 5.5,
+    "estHumanTimeSec": 72
+  },
+  {
+    "url": "https://www.zendesk.com",
+    "timestamp": "2026-03-17T09:43:54.043Z",
+    "homepageLoadMs": 1001,
+    "contactUrl": "https://www.zendesk.com/contact/",
+    "navMethod": "nav link \"Contact Us\"",
+    "navTimeMs": 3499,
+    "totalFields": 5,
+    "requiredFields": 0,
+    "optionalFields": 5,
+    "fieldInventory": [
+      {
+        "label": "First name",
+        "type": "input",
+        "required": false
+      },
+      {
+        "label": "Last name",
+        "type": "input",
+        "required": false
+      },
+      {
+        "label": "Work email",
+        "type": "email",
+        "required": false
+      },
+      {
+        "label": "Message",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "label": "Country",
+        "type": "select",
+        "required": false
+      }
+    ],
+    "fieldTypes": "input, email, textarea, select",
+    "complexFields": 1,
+    "captcha": "None",
+    "cookieBanner": true,
+    "aboveFold": true,
+    "scrollNeeded": true,
+    "multiStep": false,
+    "submitButton": "Send message",
+    "fillTimeMs": 3447,
+    "totalClicks": 3,
+    "fieldTimings": [
+      {
+        "field": "First name",
+        "ms": 4
+      },
+      {
+        "field": "Last name",
+        "ms": 3
+      },
+      {
+        "field": "Work email",
+        "ms": 121
+      },
+      {
+        "field": "Message",
+        "ms": 132
+      },
+      {
+        "field": "Country",
+        "ms": 154
+      }
+    ],
+    "fillErrors": [],
+    "interruptions": 0,
+    "frictionScore": 4,
+    "estHumanTimeSec": 35
+  },
+  {
+    "url": "https://www.deloitte.com",
+    "timestamp": "2026-03-17T09:44:04.615Z",
+    "homepageLoadMs": 899,
+    "contactUrl": "https://www.deloitte.com/us/en/contact/contact-us.html?icid=bn_contact-us",
+    "navMethod": "nav link \"Contact Us\"",
+    "navTimeMs": 2861,
+    "totalFields": 14,
+    "requiredFields": 9,
+    "optionalFields": 5,
+    "fieldInventory": [
+      {
+        "label": "search_location",
+        "type": "input",
+        "required": false
+      },
+      {
+        "label": "Topic",
+        "type": "input",
+        "required": true
+      },
+      {
+        "label": "First Name*",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Last Name*",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Email Address*",
+        "type": "email",
+        "required": true
+      },
+      {
+        "label": "Company*",
+        "type": "text",
+        "required": false
+      },
+      {
+        "label": "Job Title*",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Phone number",
+        "type": "text",
+        "required": false
+      },
+      {
+        "label": "Zip/postal code*",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Location*",
+        "type": "input",
+        "required": true
+      },
+      {
+        "label": "How can we help?",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "label": "Yes",
+        "type": "radio",
+        "required": true
+      },
+      {
+        "label": "No",
+        "type": "radio",
+        "required": true
+      },
+      {
+        "label": "unknown",
+        "type": "checkbox",
+        "required": false
+      }
+    ],
+    "fieldTypes": "input, text, email, textarea, radio, checkbox",
+    "complexFields": 0,
+    "captcha": "None",
+    "cookieBanner": true,
+    "aboveFold": true,
+    "scrollNeeded": true,
+    "multiStep": false,
+    "submitButton": "Submit",
+    "fillTimeMs": 3899,
+    "totalClicks": 10,
+    "fieldTimings": [
+      {
+        "field": "Last Name*",
+        "ms": 1065
+      },
+      {
+        "field": "Email Address*",
+        "ms": 329
+      },
+      {
+        "field": "Company*",
+        "ms": 206
+      },
+      {
+        "field": "Job Title*",
+        "ms": 228
+      },
+      {
+        "field": "Phone number",
+        "ms": 93
+      },
+      {
+        "field": "Zip/postal code*",
+        "ms": 127
+      },
+      {
+        "field": "Location*",
+        "ms": 29
+      },
+      {
+        "field": "How can we help?",
+        "ms": 108
+      },
+      {
+        "field": "Yes",
+        "ms": 298
+      },
+      {
+        "field": "No",
+        "ms": 42
+      }
+    ],
+    "fillErrors": [],
+    "interruptions": 1,
+    "frictionScore": 5,
+    "estHumanTimeSec": 70
+  },
+  {
+    "url": "https://www.mckinsey.com",
+    "timestamp": "2026-03-17T09:44:14.554Z",
+    "error": "page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.mckinsey.com/\nCall log:\n  - navigating to \"https://www.mckinsey.com/\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "url": "https://www.pwc.com",
+    "timestamp": "2026-03-17T09:44:14.652Z",
+    "homepageLoadMs": 651,
+    "contactUrl": "https://www.pwc.com/us/en.html",
+    "navMethod": "nav link \"Contact Us\"",
+    "navTimeMs": 1190,
+    "totalFields": 0,
+    "requiredFields": 0,
+    "optionalFields": 0,
+    "fieldInventory": [],
+    "fieldTypes": "",
+    "complexFields": 0,
+    "captcha": "None",
+    "cookieBanner": true,
+    "aboveFold": true,
+    "scrollNeeded": false,
+    "multiStep": false,
+    "submitButton": "",
+    "fillTimeMs": 0,
+    "totalClicks": 0,
+    "fieldTimings": [],
+    "fillErrors": [],
+    "interruptions": 0,
+    "frictionScore": 0.5,
+    "estHumanTimeSec": 5
+  }
+]

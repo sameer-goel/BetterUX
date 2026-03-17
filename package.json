@@ -1,0 +1,17 @@
+{
+  "name": "betterux-ai",
+  "version": "0.1.0",
+  "description": "Autonomous UX benchmarking agent. Test any website's contact experience. URL in, friction score out.",
+  "main": "benchmark.js",
+  "scripts": {
+    "benchmark": "node benchmark.js",
+    "test:crm": "node benchmark.js examples/test-crm.json",
+    "test:consulting": "node benchmark.js examples/test-consulting.json"
+  },
+  "keywords": ["ux", "benchmarking", "contact-form", "friction", "playwright", "autonomous", "agent", "ai"],
+  "author": "Sameer Goel",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.40.0"
+  }
+}
