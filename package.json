@@ -8,10 +8,19 @@
     "test:crm": "node benchmark.js examples/test-crm.json",
     "test:consulting": "node benchmark.js examples/test-consulting.json"
   },
-  "keywords": ["ux", "benchmarking", "contact-form", "friction", "playwright", "autonomous", "agent", "ai"],
+  "keywords": [
+    "ux",
+    "benchmarking",
+    "contact-form",
+    "friction",
+    "playwright",
+    "autonomous",
+    "agent",
+    "ai"
+  ],
   "author": "Sameer Goel",
   "license": "MIT",
   "dependencies": {
-    "playwright": "^1.40.0"
+    "playwright": "^1.52.0"
   }
 }
